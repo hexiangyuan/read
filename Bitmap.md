@@ -141,7 +141,7 @@ LruCache<String, Bitmap> bitmapCache = new LruCache<String, Bitmap>(cacheSize) {
   ```java
   try {
      ......
-  } catch (IOException e) {
+  } catch (OutOfMemoryError e) {
       e.printStackTrace();
       ......
   }
